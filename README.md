@@ -1,8 +1,8 @@
-<h1 align="center">外卖订餐系统</h1><br>
+##外卖订餐系统
 基于SSM的前后端分离的外卖订餐系统，通过整合Swagger实现Restful API风格<br>
 项目部署好可进行访问：http://localhost:8080/take/swagger-ui.html<br>
 目前主要侧重写后端代码，待后端代码写得差不多，再进行前端的整合<br>
-<h2>项目的搭建<h2>
+###项目的搭建
 JDK：1.8以上<br>
 开发工具：Eclipse，喜欢用IDE的导入项目时需注意<br>
 web容器：Tomcat9.0以上<br>
