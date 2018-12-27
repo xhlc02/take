@@ -11,31 +11,31 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.zsy.pojo.Menu;
 import com.zsy.pojo.User;
-import com.zsy.service.UserService;
-import com.zsy.service.impl.UserServiceImpl;
+import com.zsy.service.MenuService;
 
 import io.swagger.annotations.ApiOperation;
 
 @Controller
-@RequestMapping("/user")
-public class UserController {
+@RequestMapping("/menu")
+public class MenuController {
 	@Autowired
-	private UserService userService;
+	private MenuService menuService;
 	
 	@RequestMapping(value="/queryUser")
 	@ResponseBody
-	@ApiOperation(value = "查询所有用户",notes = "无条件查询用户")
-	public List<User> queryUser(){
-		List<User> list = userService.queryUser();
+	@ApiOperation(value = "查询所有菜单",notes = "无条件查询菜单")
+	public List<Menu> queryUser(){
+		List<Menu> list = menuService.queryMenu();
 		return list;
 	}
 	@RequestMapping(value="/delUserById")
 	@ResponseBody
-	@ApiOperation(value = "通过id删除一个用户",notes = "通过id删除一个指定的用户")
-	public Map<String, String> delUserById(@RequestBody String userId){
+	@ApiOperation(value = "通过id删除一个菜单",notes = "通过id删除一个指定的菜单")
+	public Map<String, String> delMenuById(@RequestBody String menuId){
 		Map<String,String> map=new HashMap<>();
-		boolean m=userService.delUserById(userId);
+		boolean m=menuService.delMenuById(menuId);
 		if(m) {
 			map.put("msg", "删除成功");
 		}else {
@@ -43,11 +43,11 @@ public class UserController {
 		}
 		return map;
 	}
-	@RequestMapping(value="/queryUserById")
+	@RequestMapping(value="/queryMenuById")
 	@ResponseBody
-	@ApiOperation(value = "通过id查找一个用户",notes = "通过id查询一个指定的用户")
-	public List<User> queryUserById(@RequestBody String userId){
-		List<User> list=userService.queryUserById(userId);
+	@ApiOperation(value = "通过id查找一个菜单",notes = "通过id查询一个指定的菜单")
+	public List<Menu> queryMenuById(@RequestBody String menuId){
+		List<Menu> list=menuService.querMenuById(menuId);
 		return list;
 	}
 }

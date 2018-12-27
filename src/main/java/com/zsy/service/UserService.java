@@ -21,5 +21,5 @@ public interface UserService {
 	 * @param userId
 	 * @return
 	 */
-	List<User> queryUserByIdr(String userId);
+	List<User> queryUserById(String userId);
 }

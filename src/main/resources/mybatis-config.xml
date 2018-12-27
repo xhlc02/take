@@ -11,6 +11,7 @@
     <typeAliases>
        <!--  <package name="com.zsy.entity" /> -->
        <typeAlias type="com.zsy.pojo.User" alias="user" />
+       <typeAlias type="com.zsy.pojo.Menu" alias="menu" />
     </typeAliases>
     
 	

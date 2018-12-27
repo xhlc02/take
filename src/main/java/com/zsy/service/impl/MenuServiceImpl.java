@@ -5,30 +5,34 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.zsy.dao.MenuDao;
 import com.zsy.dao.UserDao;
+import com.zsy.pojo.Menu;
 import com.zsy.pojo.User;
+import com.zsy.service.MenuService;
 import com.zsy.service.UserService;
 @Service
-public class UserServiceImpl implements UserService {
+public class MenuServiceImpl implements MenuService {
 	@Autowired
-	private UserDao userDao;
+	private MenuDao menuDao;
 
 	@Override
-	public List<User> queryUser() {
+	public List<Menu> queryMenu() {
 		// TODO Auto-generated method stub
-		return userDao.queryUser();
+		return menuDao.queryMenu();
 	}
 
 	@Override
-	public boolean delUserById(String userId) {
-		boolean m=userDao.delUserById(userId);
+	public boolean delMenuById(String menuId) {
+		boolean m=menuDao.delMenuById(menuId);
 		return m;
 	}
 
 	@Override
-	public List<User> queryUserById(String userId) {
+	public List<Menu> querMenuById(String menuId) {
 		// TODO Auto-generated method stub
-		return userDao.querUserById(userId);
+		return menuDao.querMenuById(menuId);
 	}
-	
+
+
 }
