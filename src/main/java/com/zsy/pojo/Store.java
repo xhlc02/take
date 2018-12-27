@@ -1,6 +1,6 @@
 package com.zsy.pojo;
 
-public class Stroe {
+public class Store {
 	  private String storeId;
 	  private String merchantsId;
 	  private String storeName;

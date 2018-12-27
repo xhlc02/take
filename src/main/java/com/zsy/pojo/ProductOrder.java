@@ -1,6 +1,8 @@
 package com.zsy.pojo;
 
-public class Order {
+import java.io.Serializable;
+
+public class ProductOrder implements Serializable  {
 	  private String orderId;
 	  private String userId;
 	  private String merchantsId;

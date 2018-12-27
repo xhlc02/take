@@ -42,12 +42,18 @@ public class MenuCategotyController {
 	@ApiOperation(value = "通过id删除一个菜单类目",notes = "通过id删除一个指定的菜单类目")
 	public Map<String, String> delMenuCategoryById(@RequestBody Integer id){
 		Map<String,String> map=new HashMap<>();
-		boolean m=menuCategoryService.delMenuCategoryById(id);
-		if(m) {
-			map.put("msg", "删除成功");
+		List<MenuCategory> list = menuCategoryService.querMenuCategoryById(id);
+		if(list!=null&&list.size()>0) {
+			boolean m=menuCategoryService.delMenuCategoryById(id);
+			if(m) {
+				map.put("msg", "删除成功");
+			}else {
+				map.put("msg", "删除失败");
+			}
 		}else {
-			map.put("msg", "删除失败");
+			map.put("msg", "你所操作的对象不存在");
 		}
+		
 		return map;
 	}
 	@RequestMapping(value="/querMenuCategoryById")

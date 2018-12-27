@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zsy.dao.MerchantsDao">
+  <select id="queryMerchants" resultType="merchants">
+   select * from merchants
+  </select>
+  <delete id="delMerchantsById" parameterType="string">
+  	delete from merchants where merchants_id=#{merchantsId}
+  </delete>
+  <select id="queryMerchantsById" parameterType="string" resultType="merchants">
+   select * from merchants where merchants_id=#{merchantsId}
+  </select>
+</mapper>
