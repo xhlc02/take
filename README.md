@@ -1,5 +1,7 @@
 # take
-一个整合SSM技术的外卖项目，通过整合Swagger实现Restful API风格<br>
+一个整合SSM技术的前后端外卖项目，通过整合Swagger实现Restful API风格<br>
+项目部署好可进行访问：http://localhost:8080/take/swagger-ui.html<br>
+目前主要侧重写后端代码，待后端代码写得差不多，再进行前端的整合<br>
 # 项目的搭建
 JDK：1.8以上<br>
 开发工具：Eclipse，喜欢用IDE的导入项目时需注意<br>
