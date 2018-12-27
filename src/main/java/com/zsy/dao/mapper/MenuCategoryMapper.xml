@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zsy.dao.MenuCategoryDao">
+  <select id="queryMenuCategory" resultType="menuCategory">
+   select * from menu_category
+  </select>
+  <delete id="delMenuCategoryById" parameterType="int">
+  	delete from menu_category where id=#{id}
+  </delete>
+  <select id="querMenuCategoryById" parameterType="int" resultType="menuCategory">
+   select * from menu_category where id=#{id}
+  </select>
+</mapper>
