@@ -1,5 +1,6 @@
-# take
-一个整合SSM技术的前后端分离外卖项目，通过整合Swagger实现Restful API风格<br>
+外卖订餐系统
+======
+基于SSM的前后端分离的外卖订餐系统，通过整合Swagger实现Restful API风格<br>
 项目部署好可进行访问：http://localhost:8080/take/swagger-ui.html<br>
 目前主要侧重写后端代码，待后端代码写得差不多，再进行前端的整合<br>
 # 项目的搭建
