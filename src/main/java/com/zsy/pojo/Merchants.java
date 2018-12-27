@@ -5,78 +5,76 @@ package com.zsy.pojo;
  *
  */
 public class Merchants {
-	  private String merchants_id;
-	  private String merchants_name;
-	  private String merchants_sfz;
-	  private String merchants_phone;
-	  private int merchants_age;
-	  private String merchants_eamil;
-	  private String merchants_create_time;
-	  private String merchants_update_time;
-	  private int merchants_status;//'商家状态 0：正常 1：注销
-	public String getMerchants_id() {
-		return merchants_id;
+	  private String merchantsId;
+	  private String merchantsName;
+	  private String merchantsSfz;
+	  private String merchantsPhone;
+	  private int merchantsAge;
+	  private String merchantsEamil;
+	  private String merchantsCreateTime;
+	  private String merchantsUpdateTime;
+	  private int merchantsStatus;//'商家状态 0：正常 1：注销
+	public String getMerchantsId() {
+		return merchantsId;
 	}
-	public void setMerchants_id(String merchants_id) {
-		this.merchants_id = merchants_id;
+	public void setMerchantsId(String merchantsId) {
+		this.merchantsId = merchantsId;
 	}
-	public String getMerchants_name() {
-		return merchants_name;
+	public String getMerchantsName() {
+		return merchantsName;
 	}
-	public void setMerchants_name(String merchants_name) {
-		this.merchants_name = merchants_name;
+	public void setMerchantsName(String merchantsName) {
+		this.merchantsName = merchantsName;
 	}
-	public String getMerchants_sfz() {
-		return merchants_sfz;
+	public String getMerchantsSfz() {
+		return merchantsSfz;
 	}
-	public void setMerchants_sfz(String merchants_sfz) {
-		this.merchants_sfz = merchants_sfz;
+	public void setMerchantsSfz(String merchantsSfz) {
+		this.merchantsSfz = merchantsSfz;
 	}
-	public String getMerchants_phone() {
-		return merchants_phone;
+	public String getMerchantsPhone() {
+		return merchantsPhone;
 	}
-	public void setMerchants_phone(String merchants_phone) {
-		this.merchants_phone = merchants_phone;
+	public void setMerchantsPhone(String merchantsPhone) {
+		this.merchantsPhone = merchantsPhone;
 	}
-	
-	public String getMerchants_eamil() {
-		return merchants_eamil;
+	public int getMerchantsAge() {
+		return merchantsAge;
 	}
-	public void setMerchants_eamil(String merchants_eamil) {
-		this.merchants_eamil = merchants_eamil;
+	public void setMerchantsAge(int merchantsAge) {
+		this.merchantsAge = merchantsAge;
 	}
-	public String getMerchants_create_time() {
-		return merchants_create_time;
+	public String getMerchantsEamil() {
+		return merchantsEamil;
 	}
-	public void setMerchants_create_time(String merchants_create_time) {
-		this.merchants_create_time = merchants_create_time;
+	public void setMerchantsEamil(String merchantsEamil) {
+		this.merchantsEamil = merchantsEamil;
 	}
-	public String getMerchants_update_time() {
-		return merchants_update_time;
+	public String getMerchantsCreateTime() {
+		return merchantsCreateTime;
 	}
-	public void setMerchants_update_time(String merchants_update_time) {
-		this.merchants_update_time = merchants_update_time;
+	public void setMerchantsCreateTime(String merchantsCreateTime) {
+		this.merchantsCreateTime = merchantsCreateTime;
 	}
-
-	public int getMerchants_age() {
-		return merchants_age;
+	public String getMerchantsUpdateTime() {
+		return merchantsUpdateTime;
 	}
-	public void setMerchants_age(int merchants_age) {
-		this.merchants_age = merchants_age;
+	public void setMerchantsUpdateTime(String merchantsUpdateTime) {
+		this.merchantsUpdateTime = merchantsUpdateTime;
 	}
-	public int getMerchants_status() {
-		return merchants_status;
+	public int getMerchantsStatus() {
+		return merchantsStatus;
 	}
-	public void setMerchants_status(int merchants_status) {
-		this.merchants_status = merchants_status;
+	public void setMerchantsStatus(int merchantsStatus) {
+		this.merchantsStatus = merchantsStatus;
 	}
 	@Override
 	public String toString() {
-		return "Merchants [merchants_id=" + merchants_id + ", merchants_name=" + merchants_name + ", merchants_sfz="
-				+ merchants_sfz + ", merchants_phone=" + merchants_phone + ", merchants_age=" + merchants_age
-				+ ", merchants_eamil=" + merchants_eamil + ", merchants_create_time=" + merchants_create_time
-				+ ", merchants_update_time=" + merchants_update_time + ", merchants_status=" + merchants_status + "]";
+		return "Merchants [merchantsId=" + merchantsId + ", merchantsName=" + merchantsName + ", merchantsSfz="
+				+ merchantsSfz + ", merchantsPhone=" + merchantsPhone + ", merchantsAge=" + merchantsAge
+				+ ", merchantsEamil=" + merchantsEamil + ", merchantsCreateTime=" + merchantsCreateTime
+				+ ", merchantsUpdateTime=" + merchantsUpdateTime + ", merchantsStatus=" + merchantsStatus + "]";
 	}
-	  
+	
 	  
 }
