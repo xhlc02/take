@@ -7,6 +7,8 @@ public class ProductOrder implements Serializable  {
 	  private String userId;
 	  private String merchantsId;
 	  private String menuId;
+	  private int orderNum;//购买数量
+	  private Double orderPrice;
 	  private String shrName;
 	  private String orderPhone;
 	  private String address;
@@ -80,13 +82,26 @@ public class ProductOrder implements Serializable  {
 	public void setOrderStatus(int orderStatus) {
 		this.orderStatus = orderStatus;
 	}
+	public int getOrderNum() {
+		return orderNum;
+	}
+	public void setOrderNum(int orderNum) {
+		this.orderNum = orderNum;
+	}
+	public Double getOrderPrice() {
+		return orderPrice;
+	}
+	public void setOrderPrice(Double orderPrice) {
+		this.orderPrice = orderPrice;
+	}
 	@Override
 	public String toString() {
-		return "Order [orderId=" + orderId + ", userId=" + userId + ", merchantsId=" + merchantsId + ", menuId="
-				+ menuId + ", shrName=" + shrName + ", orderPhone=" + orderPhone + ", address=" + address + ", note="
-				+ note + ", orderCreateTime=" + orderCreateTime + ", orderUpdateTime=" + orderUpdateTime
-				+ ", orderStatus=" + orderStatus + "]";
+		return "ProductOrder [orderId=" + orderId + ", userId=" + userId + ", merchantsId=" + merchantsId + ", menuId="
+				+ menuId + ", orderNum=" + orderNum + ", orderPrice=" + orderPrice + ", shrName=" + shrName
+				+ ", orderPhone=" + orderPhone + ", address=" + address + ", note=" + note + ", orderCreateTime="
+				+ orderCreateTime + ", orderUpdateTime=" + orderUpdateTime + ", orderStatus=" + orderStatus + "]";
 	}
+	
 	
 	  
 	  
