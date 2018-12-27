@@ -10,4 +10,16 @@ public interface UserService {
 	 * @return
 	 */
 	List<User> queryUser();
+	/**
+	 * 通过id删除用户
+	 * @param userId
+	 * @return
+	 */
+	boolean delUserById(String userId);
+	/**
+	 * 通过id查询用户
+	 * @param userId
+	 * @return
+	 */
+	List<User> queryUserByIdr(String userId);
 }

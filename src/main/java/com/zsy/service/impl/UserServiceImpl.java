@@ -17,6 +17,18 @@ public class UserServiceImpl implements UserService {
 	public List<User> queryUser() {
 		// TODO Auto-generated method stub
 		return userDao.queryUser();
+	}
+
+	@Override
+	public boolean delUserById(String userId) {
+		boolean m=userDao.delUserById(userId);
+		return m;
+	}
+
+	@Override
+	public List<User> queryUserByIdr(String userId) {
+		// TODO Auto-generated method stub
+		return userDao.querUserById(userId);
 	};
 	
 }

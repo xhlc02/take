@@ -5,4 +5,10 @@
   <select id="queryUser" resultType="user">
    select * from user
   </select>
+  <delete id="delUserById" parameterType="string">
+  	delete from user where user_id=#{userId}
+  </delete>
+  <select id="querUserById" parameterType="string" resultType="user">
+   select * from user where user_id=#{userId}
+  </select>
 </mapper>
