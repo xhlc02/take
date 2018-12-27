@@ -7,6 +7,7 @@ package com.zsy.pojo;
 public class Merchants {
 	  private String merchantsId;
 	  private String merchantsName;
+	  private String merchantsPassword;
 	  private String merchantsSfz;
 	  private String merchantsPhone;
 	  private int merchantsAge;
@@ -68,12 +69,20 @@ public class Merchants {
 	public void setMerchantsStatus(int merchantsStatus) {
 		this.merchantsStatus = merchantsStatus;
 	}
+	
+	public String getMerchantsPassword() {
+		return merchantsPassword;
+	}
+	public void setMerchantsPassword(String merchantsPassword) {
+		this.merchantsPassword = merchantsPassword;
+	}
 	@Override
 	public String toString() {
-		return "Merchants [merchantsId=" + merchantsId + ", merchantsName=" + merchantsName + ", merchantsSfz="
-				+ merchantsSfz + ", merchantsPhone=" + merchantsPhone + ", merchantsAge=" + merchantsAge
-				+ ", merchantsEamil=" + merchantsEamil + ", merchantsCreateTime=" + merchantsCreateTime
-				+ ", merchantsUpdateTime=" + merchantsUpdateTime + ", merchantsStatus=" + merchantsStatus + "]";
+		return "Merchants [merchantsId=" + merchantsId + ", merchantsName=" + merchantsName + ", merchantsPassword="
+				+ merchantsPassword + ", merchantsSfz=" + merchantsSfz + ", merchantsPhone=" + merchantsPhone
+				+ ", merchantsAge=" + merchantsAge + ", merchantsEamil=" + merchantsEamil + ", merchantsCreateTime="
+				+ merchantsCreateTime + ", merchantsUpdateTime=" + merchantsUpdateTime + ", merchantsStatus="
+				+ merchantsStatus + "]";
 	}
 	
 	  

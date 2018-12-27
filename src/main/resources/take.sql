@@ -11,7 +11,7 @@
  Target Server Version : 50724
  File Encoding         : 65001
 
- Date: 27/12/2018 15:29:53
+ Date: 27/12/2018 17:03:52
 */
 
 SET NAMES utf8mb4;
@@ -51,7 +51,8 @@ DROP TABLE IF EXISTS `merchants`;
 CREATE TABLE `merchants`  (
   `merchants_id` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '商家id',
   `merchants_name` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '商家姓名',
-  `merchants_sfz` varchar(32) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '商家身份证',
+  `merchants_password` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '商家密码',
+  `merchants_sfz` varchar(32) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '商家身份证',
   `merchants_phone` varchar(32) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '商家手机号',
   `merchants_age` int(8) NULL DEFAULT NULL COMMENT '商家性别',
   `merchants_eamil` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '商家邮箱',
@@ -60,6 +61,11 @@ CREATE TABLE `merchants`  (
   `merchants_status` int(8) NULL DEFAULT NULL COMMENT '商家状态 0：正常 1：注销',
   PRIMARY KEY (`merchants_id`) USING BTREE
 ) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of merchants
+-- ----------------------------
+INSERT INTO `merchants` VALUES ('2', '2', '2', '2', '2', 2, NULL, NULL, NULL, NULL);
 
 -- ----------------------------
 -- Table structure for product_order
@@ -111,10 +117,5 @@ CREATE TABLE `user`  (
   `user_status` int(8) NULL DEFAULT NULL COMMENT '用户状态 0：正常 1：注销',
   PRIMARY KEY (`user_id`) USING BTREE
 ) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
-
--- ----------------------------
--- Records of user
--- ----------------------------
-INSERT INTO `user` VALUES ('2', '2', '2', '2', '2', '2', 2);
 
 SET FOREIGN_KEY_CHECKS = 1;

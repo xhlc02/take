@@ -23,4 +23,11 @@ public interface MerchantsService {
 	 * @return
 	 */
 	List<Merchants> queryMerchantsById(String merchantsId);
+	/**
+	 * 通过商家名和密码查询是否存在
+	 ** @param merchantsName
+	 * @param merchantsPassword
+	 * @return
+	 */
+	Merchants queryMerchantsnameAndPwd(String merchantsName, String merchantsPassword);
 }

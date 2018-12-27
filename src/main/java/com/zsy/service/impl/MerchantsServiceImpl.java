@@ -32,4 +32,10 @@ public class MerchantsServiceImpl implements MerchantsService {
 		return merchantsDao.queryMerchantsById(merchantsId);
 	}
 
+	@Override
+	public Merchants queryMerchantsnameAndPwd(String merchantsName, String merchantsPassword) {
+		// TODO Auto-generated method stub
+		return merchantsDao.queryMerchantsnameAndPwd(merchantsName,merchantsPassword);
+	}
+
 }

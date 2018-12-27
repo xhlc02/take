@@ -30,5 +30,11 @@ public class UserServiceImpl implements UserService {
 		// TODO Auto-generated method stub
 		return userDao.querUserById(userId);
 	}
+
+	@Override
+	public User queryUsernameAndPwd(String username, String password) {
+		// TODO Auto-generated method stub
+		return userDao.queryUsernameAndPwd(username, password);
+	}
 	
 }
